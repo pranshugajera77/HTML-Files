@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .radio-group {
+            margin: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arithmetic Operations</h1>
+    <label for="num1">Enter First Number:</label>
+    <input type="number" id="num1"><br>
+    <label for="num2">Enter Second Number:</label>
+    <input type="number" id="num2"><br>
+    <div class="radio-group">
+        <label><input type="radio" name="operation" value="add"> Add</label>
+        <label><input type="radio" name="operation" value="sub"> Subtract</label>
+        <label><input type="radio" name="operation" value="mul"> Multiply</label>
+        <label><input type="radio" name="operation" value="div"> Divide</label>
+    </div>
+    <button onclick="performOperation()">Calculate</button><br>
+    <label for="result">Result:</label>
+    <input type="text" id="result" readonly>
+    <script src="script.js"></script>
+</body>
+</html>
