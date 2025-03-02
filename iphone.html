@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iPhone 15 Pro Max Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="iphone-body">
+    <!-- Side buttons -->
+    <div class="side-buttons">
+        <div class="volume-up"></div>
+        <div class="volume-down"></div>
+        <div class="power-button"></div>
+    </div>
+
+    <!-- Screen area -->
+    <div class="screen">
+        <div class="dynamic-island">Dynamic Island</div>
+
+        <div class="app-grid">
+            <div class="app-icon" onclick="openApp('phone')">📞</div>
+            <div class="app-icon" onclick="openApp('camera')">📸</div>
+            <div class="app-icon" onclick="openApp('settings')">⚙️</div>
+            <div class="app-icon" onclick="openApp('browser')">🌐</div>
+        </div>
+
+        <div class="gesture-bar"></div>
+    </div>
+</div>
+
+<!-- Simple App Popup -->
+<div class="app-window" id="appWindow">
+    <div class="app-header">
+        <span id="appTitle">App</span>
+        <button onclick="closeApp()">✖️</button>
+    </div>
+    <div class="app-content" id="appContent">
+        App Content Here
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
